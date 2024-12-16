@@ -1,0 +1,3612 @@
+[
+    {
+        "id": "qaxecjiug2pi2zt",
+        "name": "mpa_entities",
+        "type": "base",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "n4ic1ctn",
+                "name": "Entity",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "txbzqzbk",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "m75xbt0l",
+                "name": "EntityProjectDetails",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [
+            "CREATE INDEX `idx_8oxGUjs` ON `mpa_entities` (\n  `Entity`,\n  `EntityID`\n)",
+            "CREATE UNIQUE INDEX `idx_vLEWqsc` ON `mpa_entities` (`EntityID`)"
+        ],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": "",
+        "updateRule": "",
+        "deleteRule": null,
+        "options": {}
+    },
+    {
+        "id": "s0k8e9dbpn2o4rg",
+        "name": "mpa_indicator_reports",
+        "type": "base",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "poqtgdoz",
+                "name": "RID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "vbgpg9re",
+                "name": "IID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "k4wgx2nv",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "hodi7w30",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "vg095sus",
+                "name": "ReportedBy",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "utvjzzpk",
+                "name": "Response",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "m7rlv7q4",
+                "name": "Comments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "mdiqwzcd",
+                "name": "IndicatorScore",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "06198ypm",
+                "name": "ApprovalStatus",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "xr2blsmw",
+                "name": "ResponseType",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "gmcjmjoe",
+                "name": "AnsweredQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": "",
+        "updateRule": "",
+        "deleteRule": null,
+        "options": {}
+    },
+    {
+        "id": "p2ch637paf3xh5f",
+        "name": "mpa_project_indicators",
+        "type": "base",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "n9e2esqx",
+                "name": "IndicatorPrimaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "unv8f1ey",
+                "name": "IndicatorSecondaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "7b59vwcf",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "zqqajy1a",
+                "name": "IID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "3bfkemi4",
+                "name": "Indicator",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "jxv0nq3p",
+                "name": "IndicatorDefinition",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "jlrcgaiv",
+                "name": "IndicatorQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "coemnace",
+                "name": "RemarksComments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "lvabk514",
+                "name": "SourceOfData",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "rkuv3daf",
+                "name": "ResponseType",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "cit1vozg",
+                "name": "ReportingPeriod",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ck6bwley",
+                "name": "ExpectedTarget",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "gxfqdwor",
+                "name": "BaselinePAD2023",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "oimojnrq",
+                "name": "Baseline2024",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "7vzeptq0",
+                "name": "TargetYearOne2024",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "a7nuut0z",
+                "name": "TargetYearTwo2025",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "0b5c7huh",
+                "name": "TargetYearThree2026",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "i7mu4o26",
+                "name": "TargetYearFour2027",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "in0lvgzl",
+                "name": "TargetYearFive2028",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "q5xpyblb",
+                "name": "TargetYearSix2029",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "jr2ph9av",
+                "name": "TargetYearSeven2030",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": "",
+        "updateRule": "",
+        "deleteRule": "",
+        "options": {}
+    },
+    {
+        "id": "7gp3hr23ny9jx5k",
+        "name": "mpa_reporting_timelines",
+        "type": "base",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "7cj2fwhd",
+                "name": "ReportName",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "7orqtutv",
+                "name": "Type",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "vq5i6gne",
+                "name": "Description",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "lhhemyjr",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ovepc34x",
+                "name": "Year",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "u4qlwgxm",
+                "name": "status",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "whvtmah0",
+                "name": "LastBiAnnual",
+                "type": "bool",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {}
+            }
+        ],
+        "indexes": [
+            "CREATE INDEX `idx_E2i0Be0` ON `mpa_reporting_timelines` (\n  `ReportName`,\n  `ReportingID`\n)",
+            "CREATE UNIQUE INDEX `idx_SwFsiVV` ON `mpa_reporting_timelines` (\n  `ReportName`,\n  `ReportingID`\n)"
+        ],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": "",
+        "updateRule": "",
+        "deleteRule": "",
+        "options": {}
+    },
+    {
+        "id": "z0a36g8g3ytd6dq",
+        "name": "mpa_users",
+        "type": "base",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "wfcsyt1b",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "rr9r79f2",
+                "name": "UserCode",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "f49jvhwk",
+                "name": "Phone",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "sq6jwech",
+                "name": "Nationality",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "k7rtkr2d",
+                "name": "PhoneNumber",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "tfrg6njm",
+                "name": "Address",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ox3vucrc",
+                "name": "ParentOrganization",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "2zdgd88u",
+                "name": "Sex",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "k28bzckw",
+                "name": "JobTitle",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "0co7ffoa",
+                "name": "AccountRole",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "x2vsovxs",
+                "name": "UserID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "eqnuapdt",
+                "name": "email",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "3bixcn04",
+                "name": "password",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "tj8wbhqp",
+                "name": "name",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": "",
+        "updateRule": "",
+        "deleteRule": null,
+        "options": {}
+    },
+    {
+        "id": "jzntaasso7kdhcd",
+        "name": "mpa_active_indicator_reports_details",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "sc7h5nnx",
+                "name": "RID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "vl0u5aev",
+                "name": "IID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "y6gfgqrd",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "p6fuus7w",
+                "name": "AnsweredQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "9iyu33t0",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "miteyfnd",
+                "name": "ReportedBy",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "0avi49sd",
+                "name": "Response",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "sou8u5kb",
+                "name": "Comments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "r4kzay9k",
+                "name": "IndicatorScore",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ibmugrgb",
+                "name": "ApprovalStatus",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "qaxqyboi",
+                "name": "ResponseType",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "bythpxgj",
+                "name": "Entity",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "kvmrhlhq",
+                "name": "EntityProjectDetails",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "bvmruyre",
+                "name": "IndicatorPrimaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ove1gaya",
+                "name": "IndicatorSecondaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "hsiqpbvy",
+                "name": "Indicator",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ajisaelm",
+                "name": "IndicatorDefinition",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "nxa2rpft",
+                "name": "IndicatorQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "jxerfcqe",
+                "name": "RemarksComments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ghqqzhwj",
+                "name": "SourceOfData",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "00srmk6d",
+                "name": "ReportingPeriod",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "hfnxabf8",
+                "name": "ReportName",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "l1lt5xws",
+                "name": "Type",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ousi2rl3",
+                "name": "Description",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "6g7ja54k",
+                "name": "Year",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "lmkb4wav",
+                "name": "status",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "SELECT DISTINCT\n    ir.id,\n    ir.RID,\n    ir.IID,\n    ir.EntityID,\n  ir.AnsweredQuestion,\n    ir.ReportingID,\n    ir.ReportedBy,\n    ir.Response,\n    ir.Comments,\n    ir.IndicatorScore,\n    ir.ApprovalStatus,\n    ir.ResponseType,\n    e.Entity,\n  e.EntityProjectDetails,\n    pi.IndicatorPrimaryCategory,\n    pi.IndicatorSecondaryCategory,\n    pi.Indicator,\n    pi.IndicatorDefinition,\n    pi.IndicatorQuestion,\n    pi.RemarksComments,\n    pi.SourceOfData,\n    pi.ReportingPeriod,\n    rt.ReportName,\n    rt.Type,\n    rt.Description,\n    rt.Year,\n    rt.status\nFROM\n    mpa_indicator_reports ir\nJOIN\n    mpa_entities e ON ir.EntityID = e.EntityID\nJOIN\n    mpa_project_indicators pi ON ir.IID = pi.IID\nJOIN\n    mpa_reporting_timelines rt ON ir.ReportingID = rt.ReportingID\nWHERE\n    rt.status = 'active';\n"
+        }
+    },
+    {
+        "id": "5k9h1tk2tgyhtgu",
+        "name": "mpa_all_both_active_inactive_indicator_reports",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "eobtwfvw",
+                "name": "RID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "umri68pr",
+                "name": "IID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "bpvfmnir",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "3e1cibce",
+                "name": "AnsweredQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "igvrmn7q",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "be4dpqjh",
+                "name": "ReportedBy",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "hqqd07yd",
+                "name": "Response",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "hg4wliyg",
+                "name": "Comments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "4errfvmc",
+                "name": "IndicatorScore",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "uqbmya1j",
+                "name": "ApprovalStatus",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "lb4h2yxq",
+                "name": "ResponseType",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ptexiwys",
+                "name": "Entity",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "rs2i6pqn",
+                "name": "EntityProjectDetails",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "mdo4bzfg",
+                "name": "IndicatorPrimaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "zwjbosh8",
+                "name": "IndicatorSecondaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "saojnms0",
+                "name": "Indicator",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "i7thgerv",
+                "name": "IndicatorDefinition",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "anw22ciy",
+                "name": "IndicatorQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "5upbaela",
+                "name": "RemarksComments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "aamwz6md",
+                "name": "SourceOfData",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "qwvnkskl",
+                "name": "ReportingPeriod",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "icgj7ebd",
+                "name": "BaselinePAD2023",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "9qd9dpgz",
+                "name": "Baseline2024",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "228tkaxz",
+                "name": "TargetYearOne2024",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "vvjjqvml",
+                "name": "TargetYearTwo2025",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "sxapfxt1",
+                "name": "TargetYearThree2026",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "wialnd7z",
+                "name": "TargetYearFour2027",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "pwfo03rc",
+                "name": "TargetYearFive2028",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "v4f5xydp",
+                "name": "TargetYearSix2029",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "fkoxtsay",
+                "name": "TargetYearSeven2030",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "kpgnhb35",
+                "name": "ReportName",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "utsopycw",
+                "name": "Type",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "gy6pr437",
+                "name": "Description",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "i23qmzln",
+                "name": "Year",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "femiupog",
+                "name": "status",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "SELECT DISTINCT\n    ir.id,\n    ir.RID,\n    ir.IID,\n    ir.EntityID,\n  ir.AnsweredQuestion,\n    ir.ReportingID,\n    ir.ReportedBy,\n    ir.Response,\n    ir.Comments,\n    ir.IndicatorScore,\n    ir.ApprovalStatus,\n    ir.ResponseType,\n    e.Entity,\n  e.EntityProjectDetails,\n    pi.IndicatorPrimaryCategory,\n    pi.IndicatorSecondaryCategory,\n    pi.Indicator,\n    pi.IndicatorDefinition,\n    pi.IndicatorQuestion,\n    pi.RemarksComments,\n    pi.SourceOfData,\n    pi.ReportingPeriod,\n  pi.BaselinePAD2023,\npi.Baseline2024,\npi.TargetYearOne2024,\npi.TargetYearTwo2025,\npi.TargetYearThree2026,\npi.TargetYearFour2027,\npi.TargetYearFive2028,\npi.TargetYearSix2029,\npi.TargetYearSeven2030,\n    rt.ReportName,\n    rt.Type,\n    rt.Description,\n    rt.Year,\n    rt.status\nFROM\n    mpa_indicator_reports ir\nJOIN\n    mpa_entities e ON ir.EntityID = e.EntityID\nJOIN\n    mpa_project_indicators pi ON ir.IID = pi.IID\nJOIN\n    mpa_reporting_timelines rt ON ir.ReportingID = rt.ReportingID;\n"
+        }
+    },
+    {
+        "id": "1a2wvmr24a799k5",
+        "name": "mpa_dashboard_for_indicators",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "kmstjukz",
+                "name": "entity_id",
+                "type": "relation",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "collectionId": "qaxecjiug2pi2zt",
+                    "cascadeDelete": false,
+                    "minSelect": null,
+                    "maxSelect": 1,
+                    "displayFields": null
+                }
+            },
+            {
+                "system": false,
+                "id": "q2zbpsrc",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "nk2h0mfp",
+                "name": "Entity",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "nb1zljok",
+                "name": "total_indicators",
+                "type": "number",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "noDecimal": false
+                }
+            },
+            {
+                "system": false,
+                "id": "eg160rsp",
+                "name": "bi_annual_report_indicators",
+                "type": "number",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "noDecimal": false
+                }
+            },
+            {
+                "system": false,
+                "id": "vsavrq9q",
+                "name": "annual_report_indicators",
+                "type": "number",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "noDecimal": false
+                }
+            },
+            {
+                "system": false,
+                "id": "cjeknskc",
+                "name": "quarterly_report_indicators",
+                "type": "number",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "noDecimal": false
+                }
+            },
+            {
+                "system": false,
+                "id": "8lzi1ckh",
+                "name": "rrf_indicators",
+                "type": "number",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "noDecimal": false
+                }
+            },
+            {
+                "system": false,
+                "id": "5er1byt1",
+                "name": "crf_indicators",
+                "type": "number",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "noDecimal": false
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "\nSELECT\n    e.id AS entity_id,\n  rt.id,\n    e.EntityID,\n    e.Entity,\n    COUNT(DISTINCT pi.id) AS total_indicators,\n    COUNT(DISTINCT CASE WHEN pi.ReportingPeriod = 'Bi-Annual Report' THEN pi.id END) AS bi_annual_report_indicators,\n    COUNT(DISTINCT CASE WHEN pi.ReportingPeriod = 'Annual Report' THEN pi.id END) AS annual_report_indicators,\n    COUNT(DISTINCT CASE WHEN pi.ReportingPeriod = 'Quarterly Report' THEN pi.id END) AS quarterly_report_indicators,\n    COUNT(DISTINCT CASE WHEN pi.IndicatorPrimaryCategory = 'Regional Results Framework' THEN pi.id END) AS rrf_indicators,\n    COUNT(DISTINCT CASE WHEN pi.IndicatorPrimaryCategory = 'Country Results Framework' THEN pi.id END) AS crf_indicators\nFROM\n    mpa_entities e\nLEFT JOIN\n    mpa_project_indicators pi ON e.EntityID = pi.EntityID OR pi.EntityID = 'ff0eed3c-72c2-4c36-a5b9-5542b0fead8a'\nLEFT JOIN\n    mpa_reporting_timelines rt ON pi.ReportingPeriod = rt.Type\nGROUP BY\n    e.id, e.EntityID, e.Entity;\n"
+        }
+    },
+    {
+        "id": "sojfyojiia5j5vu",
+        "name": "mpa_inactive_indicator_reports_details",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "c7l8jzvd",
+                "name": "RID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "tfv9zdrv",
+                "name": "IID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "8fjskm8w",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "1hebbsya",
+                "name": "AnsweredQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "nevz0pan",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "jzvzf19p",
+                "name": "ReportedBy",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "bdjigbrz",
+                "name": "Response",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ipdph28s",
+                "name": "Comments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "qzs95yq0",
+                "name": "IndicatorScore",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "shhei5ox",
+                "name": "ApprovalStatus",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ijx1rltg",
+                "name": "ResponseType",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "kyadyhg0",
+                "name": "Entity",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "odqv6fk3",
+                "name": "EntityProjectDetails",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "wz0ubpix",
+                "name": "IndicatorPrimaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "jn1gwa74",
+                "name": "IndicatorSecondaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "djjmasw2",
+                "name": "Indicator",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "h4xpkeu4",
+                "name": "IndicatorDefinition",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "mvmbpm8p",
+                "name": "IndicatorQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "l5tmd3cy",
+                "name": "RemarksComments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "v2shyiie",
+                "name": "SourceOfData",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "gzjjsfak",
+                "name": "ReportingPeriod",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "v8yrpose",
+                "name": "ReportName",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "vxbc27mc",
+                "name": "Type",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "etywqzqw",
+                "name": "Description",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ecnmdlfh",
+                "name": "Year",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "1ab5vd9k",
+                "name": "status",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "SELECT DISTINCT\n    ir.id,\n    ir.RID,\n    ir.IID,\n    ir.EntityID,\n    ir.AnsweredQuestion,\n    ir.ReportingID,\n    ir.ReportedBy,\n    ir.Response,\n    ir.Comments,\n    ir.IndicatorScore,\n    ir.ApprovalStatus,\n    ir.ResponseType,\n    e.Entity,\n    e.EntityProjectDetails,\n    pi.IndicatorPrimaryCategory,\n    pi.IndicatorSecondaryCategory,\n    pi.Indicator,\n    pi.IndicatorDefinition,\n    pi.IndicatorQuestion,\n    pi.RemarksComments,\n    pi.SourceOfData,\n    pi.ReportingPeriod,\n    rt.ReportName,\n    rt.Type,\n    rt.Description,\n    rt.Year,\n    rt.status\nFROM\n    mpa_indicator_reports ir\nJOIN\n    mpa_entities e ON ir.EntityID = e.EntityID\nJOIN\n    mpa_project_indicators pi ON ir.IID = pi.IID\nJOIN\n    mpa_reporting_timelines rt ON ir.ReportingID = rt.ReportingID\nWHERE\n    rt.status = 'disabled'\nGROUP BY\n    ir.id,\n    ir.RID,\n    ir.IID,\n    ir.EntityID,\n    ir.AnsweredQuestion,\n    ir.ReportingID,\n    ir.ReportedBy,\n    ir.Response,\n    ir.Comments,\n    ir.IndicatorScore,\n    ir.ApprovalStatus,\n    ir.ResponseType,\n    e.Entity,\n    e.EntityProjectDetails,\n    pi.IndicatorPrimaryCategory,\n    pi.IndicatorSecondaryCategory,\n    pi.Indicator,\n    pi.IndicatorDefinition,\n    pi.IndicatorQuestion,\n    pi.RemarksComments,\n    pi.SourceOfData,\n    pi.ReportingPeriod,\n    rt.ReportName,\n    rt.Type,\n    rt.Description,\n    rt.Year,\n    rt.status;\n"
+        }
+    },
+    {
+        "id": "fuuiyl7x63qp84y",
+        "name": "mpa_project_indicators_with_entities",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "yzuiepvr",
+                "name": "IndicatorPrimaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "geqfe814",
+                "name": "IndicatorSecondaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "tionvntt",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "umgua8xc",
+                "name": "IID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "9iiaiq7y",
+                "name": "Indicator",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "jq3hr48u",
+                "name": "IndicatorDefinition",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "nfjxwruu",
+                "name": "IndicatorQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "3k7pgvkc",
+                "name": "RemarksComments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "uswumob5",
+                "name": "SourceOfData",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "opkezlyy",
+                "name": "ResponseType",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "cquagvqz",
+                "name": "ReportingPeriod",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "wogmrpwb",
+                "name": "Entity",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "SELECT \n    pi.id,\n    pi.IndicatorPrimaryCategory,\n    pi.IndicatorSecondaryCategory,\n    pi.EntityID,\n    pi.IID,\n    pi.Indicator,\n    pi.IndicatorDefinition,\n    pi.IndicatorQuestion,\n    pi.RemarksComments,\n    pi.SourceOfData,\n    pi.ResponseType,\n    pi.ReportingPeriod,   \n    e.Entity\nFROM \n    mpa_project_indicators pi\nJOIN \n    mpa_entities e ON pi.EntityID = e.EntityID;"
+        }
+    },
+    {
+        "id": "dzaqfx9tpqakeik",
+        "name": "mpa_reported_indicators_detailed_view",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "wier0uei",
+                "name": "RID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "vhir2ir2",
+                "name": "IID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "7vkeedte",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "2bpzkvur",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "cskm6ypu",
+                "name": "ReportedBy",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "cu4zuqj1",
+                "name": "Response",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "wauvt66k",
+                "name": "Comments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "yny0p7eg",
+                "name": "IndicatorScore",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "2ixp9uk3",
+                "name": "ApprovalStatus",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "nam42gyx",
+                "name": "ResponseType",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "xwiioewe",
+                "name": "Entity",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ezzmdgez",
+                "name": "IndicatorPrimaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "agoom7fr",
+                "name": "IndicatorSecondaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "yhqs2hrm",
+                "name": "Indicator",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "evbtxcyv",
+                "name": "IndicatorDefinition",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "6hmmcht1",
+                "name": "IndicatorQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "q8unrbqj",
+                "name": "RemarksComments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "vpjqdrvl",
+                "name": "SourceOfData",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "weirffvf",
+                "name": "ReportingPeriod",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "42njrexa",
+                "name": "ReportName",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "afor4gro",
+                "name": "Type",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "vofxkmoy",
+                "name": "Description",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "wmtjxu0s",
+                "name": "Year",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "tu2cpten",
+                "name": "status",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "SELECT DISTINCT\n    ir.id,\n    ir.RID,\n    ir.IID,\n    ir.EntityID,\n    ir.ReportingID,\n    ir.ReportedBy,\n    ir.Response,\n    ir.Comments,\n    ir.IndicatorScore,\n    ir.ApprovalStatus,\n    ir.ResponseType,\n    e.Entity,\n    pi.IndicatorPrimaryCategory,\n    pi.IndicatorSecondaryCategory,\n    pi.Indicator,\n    pi.IndicatorDefinition,\n    pi.IndicatorQuestion,\n    pi.RemarksComments,\n    pi.SourceOfData,\n    pi.ReportingPeriod,\n    rt.ReportName,\n    rt.Type,\n    rt.Description,\n    rt.Year,\n    rt.status\nFROM\n    mpa_indicator_reports ir\nJOIN\n    mpa_entities e ON ir.EntityID = e.EntityID\nJOIN\n    mpa_project_indicators pi ON ir.IID = pi.IID\nJOIN\n    mpa_reporting_timelines rt ON ir.ReportingID = rt.ReportingID;\n"
+        }
+    },
+    {
+        "id": "ahau59uqaa0hu7n",
+        "name": "mpa_reporting_analytics",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "huxpngqa",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "dbn5lkgb",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "zqpuhbkm",
+                "name": "Year",
+                "type": "json",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "maxSize": 1
+                }
+            },
+            {
+                "system": false,
+                "id": "fmfpvzs8",
+                "name": "IndicatorCount",
+                "type": "number",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "noDecimal": false
+                }
+            },
+            {
+                "system": false,
+                "id": "eywh2gmu",
+                "name": "ReportName",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "SELECT \n    ir.id,\n    ir.ReportingID,\n    ir.EntityID,\n    strftime('%Y', ir.created) AS Year,\n    COUNT(ir.IID) AS IndicatorCount,\n    rt.ReportName\nFROM \n    mpa_indicator_reports ir\nLEFT JOIN \n    mpa_reporting_timelines rt ON ir.ReportingID = rt.ReportingID\nWHERE \n    strftime('%Y', ir.created) = strftime('%Y', 'now')\nGROUP BY \n    ir.ReportingID, ir.EntityID;\n"
+        }
+    },
+    {
+        "id": "3jdv2aepyl3gbvy",
+        "name": "mpa_rrf_active_reports",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "kqolure9",
+                "name": "ReportName",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ypzeek2g",
+                "name": "Type",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "y9licxwf",
+                "name": "Description",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "fcsqdipb",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "aafyfi1c",
+                "name": "Year",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "SELECT\n    rt.id,\n    rt.ReportName,\n    rt.Type,\n    rt.Description,\n    rt.ReportingID,\n    rt.Year\nFROM\n    mpa_reporting_timelines rt\nINNER JOIN\n    mpa_project_indicators pi ON rt.Type = pi.ReportingPeriod\nWHERE\n    rt.status = 'active'\n    AND pi.IndicatorPrimaryCategory = 'Regional Results Framework'\nGROUP BY\n    rt.ReportingID;\n"
+        }
+    },
+    {
+        "id": "4l4vkmlrgki929m",
+        "name": "mpa_rrf_indicators",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "3ljk9his",
+                "name": "IndicatorPrimaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "dm3ylxtc",
+                "name": "IndicatorSecondaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "svjutnmx",
+                "name": "IID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "u7hnaip8",
+                "name": "Indicator",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "dlkoezwb",
+                "name": "IndicatorDefinition",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "8dxidxwo",
+                "name": "IndicatorQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "runqally",
+                "name": "RemarksComments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "rfcdqvrb",
+                "name": "SourceOfData",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "mhnpg4gv",
+                "name": "ResponseType",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "mrzp36hk",
+                "name": "ReportingPeriod",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "ooxa5glu",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "SELECT DISTINCT \n    pi.id,\n    pi.IndicatorPrimaryCategory,\n    pi.IndicatorSecondaryCategory,\n    pi.IID,\n    pi.Indicator,\n    pi.IndicatorDefinition,\n    pi.IndicatorQuestion,\n    pi.RemarksComments,\n    pi.SourceOfData,\n    pi.ResponseType,\n    pi.ReportingPeriod,\n    rt.ReportingID\nFROM \n    mpa_project_indicators pi\nJOIN \n    mpa_reporting_timelines rt\nON \n    pi.ReportingPeriod = rt.Type\nWHERE \n    pi.IndicatorPrimaryCategory = 'Regional Results Framework';"
+        }
+    },
+    {
+        "id": "g1syxg0arsqxgn6",
+        "name": "rrf_reported_mpa_view",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "6lyt8uap",
+                "name": "RID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "nkwxqwt5",
+                "name": "IID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "yefpznjs",
+                "name": "EntityID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "90qzn9xo",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "l7ay2jd2",
+                "name": "ReportedBy",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "5q7ulnzv",
+                "name": "Response",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "w2305ez7",
+                "name": "AnsweredQuestion",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "wsudtsru",
+                "name": "Comments",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "xdcxfqfv",
+                "name": "IndicatorScore",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "rleq0s0f",
+                "name": "ApprovalStatus",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "jhjxuslm",
+                "name": "indicator_report_response_type",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "svbc0wjp",
+                "name": "Indicator",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "6fqcgdnw",
+                "name": "IndicatorPrimaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "tglwft2a",
+                "name": "IndicatorSecondaryCategory",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "qlzeygvw",
+                "name": "ResponseType",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "srqe7f6j",
+                "name": "BaselinePAD2023",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "a3phdlb1",
+                "name": "Baseline2024",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "wd2r5ipq",
+                "name": "TargetYearOne2024",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "6f10gpif",
+                "name": "TargetYearTwo2025",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "grmqtb02",
+                "name": "TargetYearThree2026",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "wtyuqzyp",
+                "name": "TargetYearFour2027",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "wayhmytv",
+                "name": "TargetYearFive2028",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "pdexsyxo",
+                "name": "TargetYearSix2029",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "w1bjngdn",
+                "name": "TargetYearSeven2030",
+                "type": "text",
+                "required": false,
+                "presentable": true,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "SELECT \n    ir.id,\n    ir.RID,\n    ir.IID,\n    ir.EntityID,\n    ir.ReportingID,\n    ir.ReportedBy,\n    ir.Response,\n    ir.AnsweredQuestion,\n    ir.Comments,\n    ir.IndicatorScore,\n    ir.ApprovalStatus,\n    ir.ResponseType AS indicator_report_response_type,\n    pi.Indicator,\n    pi.IndicatorPrimaryCategory,\n    pi.IndicatorSecondaryCategory,\n    pi.ResponseType,\n    pi.BaselinePAD2023,\n    pi.Baseline2024,\n    pi.TargetYearOne2024,\n    pi.TargetYearTwo2025,\n    pi.TargetYearThree2026,\n    pi.TargetYearFour2027,\n    pi.TargetYearFive2028,\n    pi.TargetYearSix2029,\n    pi.TargetYearSeven2030\nFROM \n    mpa_indicator_reports ir\nJOIN \n    mpa_project_indicators pi ON ir.IID = pi.IID\nJOIN\n    mpa_reporting_timelines rt ON ir.ReportingID = rt.ReportingID \nWHERE \n    pi.IndicatorPrimaryCategory = 'Regional Results Framework'\n    AND (rt.Type LIKE '%Annual%' OR rt.Type LIKE '%Bi-Annual%')\n    AND (rt.Description LIKE '%Annual%' OR rt.Description LIKE '%December%');"
+        }
+    },
+    {
+        "id": "vjyfiwa26l3f7jb",
+        "name": "rrf_reported_reports_only",
+        "type": "view",
+        "system": false,
+        "schema": [
+            {
+                "system": false,
+                "id": "xa4hma2b",
+                "name": "ReportingID",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "3j76qv9y",
+                "name": "ReportName",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "hvw1djfz",
+                "name": "Type",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "17tc888q",
+                "name": "Description",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "uw4pxuxq",
+                "name": "Year",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            },
+            {
+                "system": false,
+                "id": "9z60lhbu",
+                "name": "status",
+                "type": "text",
+                "required": false,
+                "presentable": false,
+                "unique": false,
+                "options": {
+                    "min": null,
+                    "max": null,
+                    "pattern": ""
+                }
+            }
+        ],
+        "indexes": [],
+        "listRule": "",
+        "viewRule": "",
+        "createRule": null,
+        "updateRule": null,
+        "deleteRule": null,
+        "options": {
+            "query": "SELECT \n  rt.id,\n    rt.ReportingID,\n    rt.ReportName,\n    rt.Type,\n    rt.Description,\n    rt.Year,\n    rt.status\nFROM \n    mpa_reporting_timelines rt\nJOIN \n    rrf_reported_mpa_view rrf ON rt.ReportingID = rrf.ReportingID\nGROUP BY \n    rt.ReportingID, rt.ReportName, rt.Type, rt.Description, rt.Year, rt.status;"
+        }
+    }
+]
